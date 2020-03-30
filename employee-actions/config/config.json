@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "employee-actions-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/employeeActions/EmployeeActionsWebPart.js",
+          "manifest": "./src/webparts/employeeActions/EmployeeActionsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EmployeeActionsWebPartStrings": "lib/webparts/employeeActions/loc/{locale}.js"
+  }
+}
