@@ -10,12 +10,21 @@ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import * as strings from 'EmployeeActionsWebPartStrings';
 import EmployeeActions from './components/EmployeeActions';
 import { IEmployeeActionsProps } from './components/IEmployeeActionsProps';
+import { setup as pnpSetup } from "@pnp/common";
 
 export interface IEmployeeActionsWebPartProps {
   description: string;
 }
 
-export default class EmployeeActionsWebPart extends BaseClientSideWebPart <IEmployeeActionsWebPartProps> {
+export default class EmployeeActionsWebPart extends BaseClientSideWebPart<IEmployeeActionsWebPartProps> {
+
+  protected onInit(): Promise<void> {
+    return super.onInit().then(_ => {
+      pnpSetup({
+        spfxContext: this.context
+      });
+    });
+  }
 
   public render(): void {
     const element: React.ReactElement<IEmployeeActionsProps> = React.createElement(
