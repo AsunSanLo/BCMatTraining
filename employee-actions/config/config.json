@@ -25,12 +25,21 @@
           "manifest": "./src/extensions/actionsNotification/ActionsNotificationApplicationCustomizer.manifest.json"
         }
       ]
+    },
+    "show-actions-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/showActions/ShowActionsCommandSet.js",
+          "manifest": "./src/extensions/showActions/ShowActionsCommandSet.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "EmployeeActionsWebPartStrings": "lib/webparts/employeeActions/loc/{locale}.js",
     "ActionsProgressFieldCustomizerStrings": "lib/extensions/actionsProgress/loc/{locale}.js",
-    "ActionsNotificationApplicationCustomizerStrings": "lib/extensions/actionsNotification/loc/{locale}.js"
+    "ActionsNotificationApplicationCustomizerStrings": "lib/extensions/actionsNotification/loc/{locale}.js",
+    "ShowActionsCommandSetStrings": "lib/extensions/showActions/loc/{locale}.js"
   }
 }

@@ -15,7 +15,8 @@
         "assets": {
           "elementManifests": [
             "elements.xml",
-            "actionsNotificationElements.xml"
+            "actionsNotificationElements.xml",
+            "showActionsElements.xml"
           ]
         }
       }
