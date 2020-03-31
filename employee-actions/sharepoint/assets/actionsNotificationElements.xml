@@ -3,7 +3,7 @@
     <CustomAction
         Title="HelloWorld"
         Location="ClientSideExtension.ApplicationCustomizer"
-        ClientSideComponentId="c537978d-ad8c-4d61-a479-c2b4687f8451"
+        ClientSideComponentId="c4a2bc99-6a4e-49c7-914a-d77d9d0b8a0c"
         ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
     </CustomAction>
 </Elements>

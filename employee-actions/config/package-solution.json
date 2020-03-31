@@ -3,7 +3,7 @@
   "solution": {
     "name": "employee-actions-client-side-solution",
     "id": "d6e0e162-c04f-453b-b548-ed5c0c012ee7",
-    "version": "1.0.0.1",
+    "version": "1.0.0.2",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
     "features": [
@@ -11,7 +11,7 @@
         "title": "Application Extension - Deployment of custom action.",
         "description": "Deploys a custom action with ClientSideComponentId association",
         "id": "2ee15afb-4b29-40e2-a202-cfdfa4d8537c",
-        "version": "1.0.0.1",
+        "version": "1.0.0.2",
         "assets": {
           "elementManifests": [
             "elements.xml",

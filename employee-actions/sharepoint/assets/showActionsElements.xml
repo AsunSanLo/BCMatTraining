@@ -5,7 +5,7 @@
         RegistrationId="100"
         RegistrationType="List"
         Location="ClientSideExtension.ListViewCommandSet.CommandBar"
-        ClientSideComponentId="142b66b9-0af6-4256-803e-fc5a467bfa09"
+        ClientSideComponentId="49feb55a-a252-43f7-84fb-5ed568d65a0c"
         ClientSideComponentProperties="{&quot;sampleTextOne&quot;:&quot;One item is selected in the list.&quot;, &quot;sampleTextTwo&quot;:&quot;This command is always visible.&quot;}">
     </CustomAction>
 </Elements>
