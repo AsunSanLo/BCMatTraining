@@ -9,12 +9,12 @@
   },
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://sanlotest.sharepoint.com/sites/bcmat/Lists/EmployeesCategories/AllItems.aspx",
-      "fieldCustomizers": {
-        "ActionsProgress": {
-          "id": "9fc361f8-5d12-4df8-afec-c74664f19fd6",
+      "pageUrl": "https://sanlotest.sharepoint.com/sites/bcmat/SitePages/Home.aspx",
+      "customActions": {
+        "c4a2bc99-6a4e-49c7-914a-d77d9d0b8a0c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "sampleText": "Value"
+            "testMessage": "Test message"
           }
         }
       }
@@ -26,6 +26,17 @@
           "id": "9fc361f8-5d12-4df8-afec-c74664f19fd6",
           "properties": {
             "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "actionsNotification": {
+      "pageUrl": "https://sanlotest.sharepoint.com/sites/bcmat/SitePages/Home.aspx",
+      "customActions": {
+        "c4a2bc99-6a4e-49c7-914a-d77d9d0b8a0c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
           }
         }
       }

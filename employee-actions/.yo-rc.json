@@ -8,6 +8,6 @@
     "isCreatingSolution": false,
     "isDomainIsolated": false,
     "componentType": "extension",
-    "extensionType": "FieldCustomizer"
+    "extensionType": "ApplicationCustomizer"
   }
 }

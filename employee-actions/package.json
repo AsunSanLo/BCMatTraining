@@ -28,7 +28,9 @@
     "react": "16.8.5",
     "react-dom": "16.8.5",
     "@microsoft/decorators": "1.10.0",
-    "@microsoft/sp-listview-extensibility": "1.10.0"
+    "@microsoft/sp-listview-extensibility": "1.10.0",
+    "@microsoft/sp-dialog": "1.10.0",
+    "@microsoft/sp-application-base": "1.10.0"
   },
   "resolutions": {
     "@types/react": "16.8.8"

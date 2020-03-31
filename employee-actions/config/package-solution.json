@@ -14,7 +14,8 @@
         "version": "1.0.0.1",
         "assets": {
           "elementManifests": [
-            "elements.xml"
+            "elements.xml",
+            "actionsNotificationElements.xml"
           ]
         }
       }

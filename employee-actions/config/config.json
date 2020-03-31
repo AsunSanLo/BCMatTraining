@@ -17,11 +17,20 @@
           "manifest": "./src/extensions/actionsProgress/ActionsProgressFieldCustomizer.manifest.json"
         }
       ]
+    },
+    "actions-notification-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/actionsNotification/ActionsNotificationApplicationCustomizer.js",
+          "manifest": "./src/extensions/actionsNotification/ActionsNotificationApplicationCustomizer.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "EmployeeActionsWebPartStrings": "lib/webparts/employeeActions/loc/{locale}.js",
-    "ActionsProgressFieldCustomizerStrings": "lib/extensions/actionsProgress/loc/{locale}.js"
+    "ActionsProgressFieldCustomizerStrings": "lib/extensions/actionsProgress/loc/{locale}.js",
+    "ActionsNotificationApplicationCustomizerStrings": "lib/extensions/actionsNotification/loc/{locale}.js"
   }
 }
