@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/employeeActions/EmployeeActionsWebPart.manifest.json"
         }
       ]
+    },
+    "actions-progress-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/actionsProgress/ActionsProgressFieldCustomizer.js",
+          "manifest": "./src/extensions/actionsProgress/ActionsProgressFieldCustomizer.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "EmployeeActionsWebPartStrings": "lib/webparts/employeeActions/loc/{locale}.js"
+    "EmployeeActionsWebPartStrings": "lib/webparts/employeeActions/loc/{locale}.js",
+    "ActionsProgressFieldCustomizerStrings": "lib/extensions/actionsProgress/loc/{locale}.js"
   }
 }

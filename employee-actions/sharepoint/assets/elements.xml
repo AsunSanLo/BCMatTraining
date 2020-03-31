@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{da6a6aa8-0082-4e7b-85bf-42444d32e23e}"
+            Name="BCActionsProgress"
+            DisplayName="Actions Progress"
+            Type="Number"
+            Min="0"
+            Required="FALSE"
+            Group="SPFx Columns"
+            ClientSideComponentId="9fc361f8-5d12-4df8-afec-c74664f19fd6">
+    </Field>
+</Elements>
