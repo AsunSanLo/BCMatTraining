@@ -27,10 +27,12 @@ export default class EmployeeActionsWebPart extends BaseClientSideWebPart<IEmplo
   }
 
   public render(): void {
+
     const element: React.ReactElement<IEmployeeActionsProps> = React.createElement(
       EmployeeActions,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        graphClientFactory: this.context.msGraphClientFactory
       }
     );
 

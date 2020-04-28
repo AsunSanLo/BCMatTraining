@@ -7,7 +7,6 @@
     "packageManager": "npm",
     "isCreatingSolution": false,
     "isDomainIsolated": false,
-    "componentType": "extension",
-    "extensionType": "ListViewCommandSet"
+    "componentType": "webpart"
   }
 }

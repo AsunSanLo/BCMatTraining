@@ -33,6 +33,14 @@
           "manifest": "./src/extensions/showActions/ShowActionsCommandSet.manifest.json"
         }
       ]
+    },
+    "property-pane-sample-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/propertyPaneSample/PropertyPaneSampleWebPart.js",
+          "manifest": "./src/webparts/propertyPaneSample/PropertyPaneSampleWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -40,6 +48,8 @@
     "EmployeeActionsWebPartStrings": "lib/webparts/employeeActions/loc/{locale}.js",
     "ActionsProgressFieldCustomizerStrings": "lib/extensions/actionsProgress/loc/{locale}.js",
     "ActionsNotificationApplicationCustomizerStrings": "lib/extensions/actionsNotification/loc/{locale}.js",
-    "ShowActionsCommandSetStrings": "lib/extensions/showActions/loc/{locale}.js"
+    "ShowActionsCommandSetStrings": "lib/extensions/showActions/loc/{locale}.js",
+    "PropertyPaneSampleWebPartStrings": "lib/webparts/propertyPaneSample/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
   }
 }

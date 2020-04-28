@@ -6,6 +6,20 @@
     "version": "1.0.0.2",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Calendar.ReadWrite"
+      },
+      {
+        "resource": "bcmatsanloregister",
+        "scope": "user_impersonation"
+      }
+    ],
     "features": [
       {
         "title": "Application Extension - Deployment of custom action.",

@@ -2,7 +2,7 @@ import * as React from 'react';
 import styles from './EmployeeActions.module.scss';
 import { IEmployeeActionsProps } from './IEmployeeActionsProps';
 import { ActionsList } from "./ActionsList/ActionsList";
-import { PrimaryButton, Separator, TextField, DatePicker, Dropdown, IDropdownOption } from 'office-ui-fabric-react';
+import { PrimaryButton, Separator, TextField, DatePicker, Dropdown, IDropdownOption, Spinner } from 'office-ui-fabric-react';
 import { sp } from "@pnp/sp";
 import "@pnp/sp/webs";
 import "@pnp/sp/lists/web";
@@ -15,6 +15,7 @@ export interface IEmployeeActionsState {
   list: Array<IEmployeeAction>;
   categories: Array<IActionCategory>;
   newAction: NewEmployeeAction;
+  loading: boolean;
 }
 
 export default class EmployeeActions extends React.Component<IEmployeeActionsProps, IEmployeeActionsState> {
@@ -23,6 +24,7 @@ export default class EmployeeActions extends React.Component<IEmployeeActionsPro
     super(props);
     this.state = {
       list: [],
+      loading: true,
       categories: [],
       newAction: {
         Title: "Hello",
@@ -38,7 +40,7 @@ export default class EmployeeActions extends React.Component<IEmployeeActionsPro
     .select("Id", "Title")
     .get<IActionCategory[]>()
     .then(data => {
-      this.setState({categories: data});
+      this.setState({categories: data, loading: false});
     });
   }
 
@@ -89,9 +91,10 @@ export default class EmployeeActions extends React.Component<IEmployeeActionsPro
   }
 
   public render(): React.ReactElement<IEmployeeActionsProps> {
+    if (this.state.loading) return <Spinner />;
     return (
       <div className={styles.employeeActions}>
-         <ActionsList items={this.state.list} />
+         <ActionsList items={this.state.list} graphClientFactory={this.props.graphClientFactory} />
 
          <Separator >Add action</Separator>
          <div>
